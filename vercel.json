@@ -1,19 +1,5 @@
 {
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
-  "framework": "vite",
-  "routes": [
-    {
-      "src": "^/api/.*",
-      "dest": "/backend/api/$1.js"
-    },
-    {
-      "src": "^/(?!api).*",
-      "dest": "/frontend/dist/index.html"
-    }
-  ],
-  "env": {
-    "EMAIL_USER": "@gmail.com",
-    "EMAIL_PASS": "@"
-  }
+  "framework": "vite"
 }
